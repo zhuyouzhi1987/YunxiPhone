@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="80.0px"
+        android:background="@color/appMainColor">
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/back"
+            android:layout_width="80px"
+            android:layout_height="80px">
+
+            <ImageView
+
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/back" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="更多设置"
+            android:textColor="#ffffffff"
+            android:textSize="32.0px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="40.0px"
+        android:background="@color/line" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/my_account_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="80.0px"
+        android:layout_below="@+id/line1"
+        android:background="@drawable/default_itemclick_selector">
+
+        <ImageView
+            android:id="@+id/my_account_icon"
+            android:layout_width="40.0px"
+            android:layout_height="40.0px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20.0px"
+            android:src="@mipmap/zhanghu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20.0px"
+            android:layout_toRightOf="@+id/my_account_icon"
+            android:text="我的认证"
+            android:textColor="#ff666666"
+            android:textSize="28.0px" />
+
+
+        <ImageView
+            android:id="@+id/right_arrow0"
+            android:layout_width="14px"
+            android:layout_height="30px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0px"
+            android:src="@mipmap/right_arrow" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0px"
+            android:layout_toLeftOf="@+id/right_arrow0"
+            android:textColor="#ff999999"
+            android:textSize="26.0px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_alignBottom="@+id/my_account_layout"
+        android:layout_marginLeft="80.0px"
+        android:background="@color/line" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/system_message_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="80.0px"
+        android:layout_below="@+id/line2"
+        android:background="@drawable/default_itemclick_selector">
+
+        <ImageView
+            android:id="@+id/system_message_icon"
+            android:layout_width="40.0px"
+            android:layout_height="40.0px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20.0px"
+            android:src="@mipmap/xiaoxi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20.0px"
+            android:layout_toRightOf="@+id/system_message_icon"
+            android:text="系统消息"
+            android:textColor="#ff666666"
+            android:textSize="28.0px" />
+
+        <ImageView
+            android:id="@+id/red_icon"
+            android:layout_width="12.0px"
+            android:layout_height="12.0px"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0px"
+            android:visibility="gone"
+            android:layout_toLeftOf="@+id/right_arrow"
+            android:src="@drawable/red_circle" />
+
+        <ImageView
+            android:id="@+id/right_arrow"
+            android:layout_width="14px"
+            android:layout_height="30px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0px"
+            android:src="@mipmap/right_arrow" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <View
+        android:id="@+id/line10"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_alignBottom="@+id/system_message_layout"
+        android:layout_marginLeft="80.0px"
+        android:background="@color/line" />
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/my_collection_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="80.0px"
+        android:layout_below="@+id/line10"
+        android:background="@drawable/default_itemclick_selector">
+
+        <ImageView
+            android:id="@+id/my_collection_icon"
+            android:layout_width="40.0px"
+            android:layout_height="40.0px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20.0px"
+            android:src="@mipmap/my_collection" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20.0px"
+            android:layout_toRightOf="@+id/my_collection_icon"
+            android:text="我收藏的"
+            android:textColor="#ff666666"
+            android:textSize="28.0px" />
+
+
+        <ImageView
+            android:layout_width="14px"
+            android:layout_height="30px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0px"
+            android:src="@mipmap/right_arrow" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <View
+        android:id="@+id/line11"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_alignBottom="@+id/my_collection_layout"
+        android:layout_marginLeft="80.0px"
+        android:background="@color/line" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/my_lock_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="80.0px"
+        android:layout_below="@+id/line11"
+        android:background="@drawable/default_itemclick_selector">
+        <ImageView
+            android:id="@+id/my_lock_icon"
+            android:layout_width="40.0px"
+            android:layout_height="40.0px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20.0px"
+            android:src="@mipmap/lock_setting" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20.0px"
+            android:layout_toRightOf="@+id/my_lock_icon"
+            android:text="锁屏设置"
+            android:textColor="#ff666666"
+            android:textSize="28.0px" />
+        <ImageView
+            android:layout_width="14px"
+            android:layout_height="30px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0px"
+            android:src="@mipmap/right_arrow" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_below="@+id/my_lock_layout"
+        android:background="@color/line" />
+
+    <View
+        android:id="@+id/line4"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_below="@+id/line3"
+        android:layout_marginTop="40.0px"
+        android:background="@color/line" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/about_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="80.0px"
+        android:layout_below="@+id/line4"
+        android:background="@drawable/default_itemclick_selector">
+
+        <ImageView
+            android:id="@+id/about_icon"
+            android:layout_width="40.0px"
+            android:layout_height="40.0px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20.0px"
+            android:src="@mipmap/guanyu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20.0px"
+            android:layout_toRightOf="@+id/about_icon"
+            android:text="关于我们"
+            android:textColor="#ff666666"
+            android:textSize="28.0px" />
+
+        <ImageView
+            android:id="@+id/right_arrow2"
+            android:layout_width="14px"
+            android:layout_height="30px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0px"
+            android:src="@mipmap/right_arrow" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:id="@+id/line5"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_alignBottom="@+id/about_layout"
+        android:layout_marginLeft="80.0px"
+        android:background="@color/line" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/feedback_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="80.0px"
+        android:layout_below="@+id/line5"
+        android:background="@drawable/default_itemclick_selector">
+
+        <ImageView
+            android:id="@+id/feedback_icon"
+            android:layout_width="40.0px"
+            android:layout_height="40.0px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20.0px"
+            android:src="@mipmap/fankui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20.0px"
+            android:layout_toRightOf="@+id/feedback_icon"
+            android:text="咨询反馈"
+            android:textColor="#ff666666"
+            android:textSize="28.0px" />
+
+        <ImageView
+            android:id="@+id/right_arrow3"
+            android:layout_width="14px"
+            android:layout_height="30px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0px"
+            android:src="@mipmap/right_arrow" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:id="@+id/line6"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_alignBottom="@+id/feedback_layout"
+        android:layout_marginLeft="80.0px"
+        android:background="@color/line" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/cache_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="80.0px"
+        android:layout_below="@+id/line6"
+        android:background="@drawable/default_itemclick_selector">
+
+        <ImageView
+            android:id="@+id/cache_icon"
+            android:layout_width="40.0px"
+            android:layout_height="40.0px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20.0px"
+            android:src="@mipmap/huancun" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20.0px"
+            android:layout_toRightOf="@+id/cache_icon"
+            android:text="清除缓存"
+            android:textColor="#ff666666"
+            android:textSize="28.0px" />
+
+        <TextView
+            android:id="@+id/cache_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0px"
+            android:layout_toLeftOf="@+id/right_arrow4"
+            android:textColor="#ff999999"
+            android:textSize="26.0px" />
+
+        <ImageView
+            android:id="@+id/right_arrow4"
+            android:layout_width="14px"
+            android:layout_height="30px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0px"
+            android:src="@mipmap/right_arrow" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:id="@+id/line7"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_alignBottom="@+id/cache_layout"
+        android:layout_marginLeft="80.0px"
+        android:background="@color/line" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/update_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="80.0px"
+        android:layout_below="@+id/line7"
+        android:background="@drawable/default_itemclick_selector">
+
+        <ImageView
+            android:id="@+id/update_icon"
+            android:layout_width="40.0px"
+            android:layout_height="40.0px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20.0px"
+            android:src="@mipmap/gengxin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20.0px"
+            android:layout_toRightOf="@+id/update_icon"
+            android:text="版本更新"
+            android:textColor="#ff666666"
+            android:textSize="28.0px" />
+
+        <ImageView
+            android:id="@+id/right_arrow5"
+            android:layout_width="14.0px"
+            android:layout_height="30.0px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0px"
+            android:src="@mipmap/right_arrow" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:id="@+id/line8"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_below="@+id/update_layout"
+        android:background="@color/line" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/logout_layout"
+        android:layout_width="480.0px"
+        android:layout_height="72.0px"
+        android:layout_below="@+id/line8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60.0px"
+        android:background="@drawable/green_yuanjiao_itemclick_selector">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="退出登录"
+            android:textColor="@color/white"
+            android:textSize="28.0px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

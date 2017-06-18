@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/appMainColor">
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/back"
+            android:layout_width="80px"
+            android:layout_height="80px">
+
+            <ImageView
+
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/back" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="咨询反馈"
+            android:textColor="#ffffff"
+            android:textSize="32px" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20px"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="240px"
+                    android:layout_margin="20px"
+                    android:background="@null"
+                    android:gravity="left|top"
+                    android:hint="请您仔细描述发生体验障碍的原因 ，我们会及时处理 ！"
+                    android:inputType="textMultiLine"
+                    android:maxLength="120"
+                    android:textCursorDrawable="@drawable/cusor_color"
+                    android:scrollbars="vertical"
+                    android:textColorHint="@color/textColor"
+                    android:textSize="28px" />
+
+                <ImageView
+                    android:id="@+id/iv_add"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_below="@+id/et_content"
+                    android:layout_marginBottom="20px"
+                    android:layout_marginLeft="20px"
+                    android:src="@mipmap/add_img" />
+
+                <TextView
+                    android:id="@+id/tv_sum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/et_content"
+                    android:layout_marginRight="20px"
+                    android:text="0/120"
+                    android:textColorHint="@color/textColor"
+                    android:textSize="24px" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/login_btn"
+                android:layout_width="480px"
+                android:layout_height="72px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40px"
+                android:background="@drawable/green_yuanjiao_itemclick_selector">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="立即提交"
+                    android:textColor="@color/white"
+                    android:textSize="28px" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <include layout="@layout/no_data" />
+
+        <include layout="@layout/loading" />
+
+    </com.zhy.autolayout.AutoFrameLayout>
+</com.zhy.autolayout.AutoLinearLayout>

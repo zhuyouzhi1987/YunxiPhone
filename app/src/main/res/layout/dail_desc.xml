@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/appMainColor">
+
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/back"
+            android:layout_width="80px"
+            android:layout_height="80px">
+
+            <ImageView
+
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/back" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="使用说明"
+            android:textColor="#ffffff"
+            android:textSize="32px"
+
+            />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        >
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/white_yuanjiao">
+
+
+            <TextView
+                android:id="@+id/tag1"
+                android:layout_marginTop="60px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:textSize="28px"
+                android:text="1.为相应国家相关政策，需实名认证后才可使用网络电话。"
+
+                />
+
+            <TextView
+                android:id="@+id/tag2"
+                android:layout_marginTop="20px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_below="@+id/tag1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:textSize="28px"
+                android:lineSpacingMultiplier="1.2"
+                android:text="2.朋友圈仅支持拨打国内移动电话。"
+
+                />
+
+
+            <TextView
+                android:id="@+id/tag3"
+                android:layout_marginTop="20px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_below="@+id/tag2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:textSize="28px"
+                android:lineSpacingMultiplier="1.2"
+                android:text="3.暂不支持的号段有14X/17X，以及新疆西藏地区。"
+
+                />
+
+            <TextView
+                android:id="@+id/tag4"
+                android:layout_marginTop="20px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_below="@+id/tag3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:textSize="28px"
+                android:lineSpacingMultiplier="1.2"
+                android:text="4.通话过程中自动扣除账户内云朵数量，不足时将自动挂机。"
+
+                />
+
+            <TextView
+                android:id="@+id/tag5"
+                android:layout_marginTop="20px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_below="@+id/tag4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:textSize="28px"
+                android:lineSpacingMultiplier="1.2"
+                android:text="5.通话过程中需要连接网络（wifi/或自有流量），其中1M自有流量约可通话3分钟，费用由用户自行承担。"
+
+                />
+
+
+            <TextView
+                android:id="@+id/tag6"
+                android:layout_marginTop="60px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_below="@+id/tag5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:textSize="28px"
+                android:lineSpacingMultiplier="1.2"
+                android:text="特别声明："
+
+                />
+
+
+            <TextView
+                android:id="@+id/tag7"
+                android:layout_marginTop="20px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_below="@+id/tag6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:textSize="28px"
+                android:lineSpacingMultiplier="1.2"
+                android:text="朋友圈仅为软件提供者，仅对完成实名认证的用户开放网络电话服务，不对用户通话过程中产生的任何纠纷或触犯的法律承担任何责任。"
+
+                />
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:layout_below="@+id/tag7"
+                />
+
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40px"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12px"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="8px"
+                android:layout_height="8px"
+                android:src="@mipmap/rectangle_left" />
+
+            <TextView
+                android:layout_width="144px"
+                android:layout_height="40px"
+                android:background="@color/appMainColor"
+                android:gravity="center"
+                android:text="注意事项"
+                android:textColor="@color/white"
+                android:textSize="24px" />
+
+            <ImageView
+                android:layout_width="8px"
+                android:layout_height="8px"
+                android:src="@mipmap/rectangle_right" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoFrameLayout>
+
+
+
+
+
+
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

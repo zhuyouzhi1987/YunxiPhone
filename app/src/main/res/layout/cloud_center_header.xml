@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/banner_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <com.yunxi.phone.utils.CarouselViewForBanner
+                android:id="@+id/carouseView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/user_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="20px"
+                android:background="@drawable/white_yuanjiao_itemclick_selector">
+
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/title_one"
+                    android:layout_width="fill_parent"
+                    android:layout_height="36px"
+                    android:layout_marginTop="16.0px">
+
+
+                    <ImageView
+                        android:layout_width="48.0px"
+                        android:layout_height="5.0px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20.0px"
+                        android:src="@mipmap/dot" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title_one"
+                    android:layout_marginTop="16.0px"
+                    android:orientation="horizontal"
+                    android:paddingBottom="20.0px">
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="累计云朵"
+                            android:textColor="#999999"
+                            android:textSize="24.0px" />
+
+                        <TextView
+                            android:id="@+id/cloud_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16px"
+                            android:textColor="@color/appMainColor"
+                            android:textSize="40.0px"
+                            android:textStyle="bold" />
+
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <ImageView
+                        android:layout_width="2px"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/dash_line" />
+
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="消耗云朵"
+                            android:textColor="#999999"
+                            android:textSize="24.0px" />
+
+                        <TextView
+                            android:id="@+id/cloud_out"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16px"
+                            android:textColor="@color/appMainColor"
+                            android:textSize="40.0px"
+                            android:textStyle="bold" />
+
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <ImageView
+                        android:layout_width="2px"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/dash_line" />
+
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="可用云朵"
+                            android:textColor="#999999"
+                            android:textSize="24.0px" />
+
+                        <TextView
+                            android:id="@+id/cloud_use"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16px"
+                            android:textColor="@color/appMainColor"
+                            android:textSize="40.0px"
+                            android:textStyle="bold" />
+
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+                </com.zhy.autolayout.AutoLinearLayout>
+
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40px"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12px"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="8px"
+                    android:layout_height="8px"
+                    android:src="@mipmap/rectangle_left" />
+
+                <TextView
+                    android:layout_width="144px"
+                    android:layout_height="40px"
+                    android:background="@color/appMainColor"
+                    android:gravity="center"
+                    android:text="我的账户"
+                    android:textColor="@color/white"
+                    android:textSize="24px" />
+
+                <ImageView
+                    android:layout_width="8px"
+                    android:layout_height="8px"
+                    android:src="@mipmap/rectangle_right" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoFrameLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20.0px"
+                android:orientation="horizontal">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/invate_layout"
+                    android:layout_width="0.0dip"
+                    android:layout_height="120.0px"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/white_yuanjiao_itemclick_selector">
+
+                    <ImageView
+                        android:id="@+id/invate_img"
+                        android:layout_width="60.0px"
+                        android:layout_height="60.0px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30.0px"
+                        android:layout_marginRight="30.0px"
+                        android:src="@mipmap/yaoqing" />
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/invate_img"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="推广任务"
+                            android:textColor="#ff666666"
+                            android:textSize="28.0px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4.0px"
+                            android:text="邀请赚云朵"
+                            android:textColor="#ff999999"
+                            android:textSize="24.0px" />
+                    </com.zhy.autolayout.AutoLinearLayout>
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <View
+                    android:layout_width="20.0px"
+                    android:layout_height="120.0px" />
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/send_layout"
+                    android:layout_width="0.0dip"
+                    android:layout_height="120.0px"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/white_yuanjiao_itemclick_selector">
+
+                    <ImageView
+                        android:id="@+id/send_img"
+                        android:layout_width="60.0px"
+                        android:layout_height="60.0px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30.0px"
+                        android:layout_marginRight="30.0px"
+                        android:src="@mipmap/zhuanfa" />
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/send_img"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="传播任务"
+                            android:textColor="#ff666666"
+                            android:textSize="28.0px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4.0px"
+                            android:text="转发赚云朵"
+                            android:textColor="#ff999999"
+                            android:textSize="24.0px" />
+                    </com.zhy.autolayout.AutoLinearLayout>
+                </com.zhy.autolayout.AutoRelativeLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20.0px"
+                android:layout_marginLeft="20.0px"
+                android:layout_marginRight="20.0px"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/experience_layout"
+                    android:layout_width="0.0dip"
+                    android:layout_height="120.0px"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/white_yuanjiao_itemclick_selector">
+
+                    <ImageView
+                        android:id="@+id/experience_img"
+                        android:layout_width="60.0px"
+                        android:layout_height="60.0px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30.0px"
+                        android:layout_marginRight="30.0px"
+                        android:src="@mipmap/download" />
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/experience_img"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="体验任务"
+                            android:textColor="#ff666666"
+                            android:textSize="28.0px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4.0px"
+                            android:text="安装赚云朵"
+                            android:textColor="#ff999999"
+                            android:textSize="24.0px" />
+                    </com.zhy.autolayout.AutoLinearLayout>
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <View
+                    android:layout_width="20.0px"
+                    android:layout_height="120.0px" />
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/sport_layout"
+                    android:layout_width="0.0dip"
+                    android:layout_height="120.0px"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/white_yuanjiao_itemclick_selector">
+
+                    <ImageView
+                        android:id="@+id/sport_img"
+                        android:layout_width="60.0px"
+                        android:layout_height="60.0px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30.0px"
+                        android:layout_marginRight="30.0px"
+                        android:src="@mipmap/yundong" />
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/sport_img"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="健康任务"
+                            android:textColor="#ff666666"
+                            android:textSize="28.0px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4.0px"
+                            android:text="运动赚云朵"
+                            android:textColor="#ff999999"
+                            android:textSize="24.0px" />
+                    </com.zhy.autolayout.AutoLinearLayout>
+                </com.zhy.autolayout.AutoRelativeLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20.0px"
+                android:layout_marginLeft="20.0px"
+                android:layout_marginRight="20.0px"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/rank_layout"
+                    android:layout_width="0.0dip"
+                    android:layout_height="120.0px"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/white_yuanjiao_itemclick_selector">
+
+                    <ImageView
+                        android:id="@+id/rank_img"
+                        android:layout_width="60.0px"
+                        android:layout_height="60.0px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30.0px"
+                        android:layout_marginRight="30.0px"
+                        android:src="@mipmap/exchange" />
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/rank_img"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="充值兑换"
+                            android:textColor="#ff666666"
+                            android:textSize="28.0px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4.0px"
+                            android:text="云朵换Q币"
+                            android:textColor="#ff999999"
+                            android:textSize="24.0px" />
+                    </com.zhy.autolayout.AutoLinearLayout>
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <View
+                    android:layout_width="20.0px"
+                    android:layout_height="120.0px" />
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/hot_game_layout"
+                    android:layout_width="0.0dip"
+                    android:layout_height="120.0px"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/white_yuanjiao_itemclick_selector">
+
+                    <ImageView
+                        android:id="@+id/hot_game_img"
+                        android:layout_width="60.0px"
+                        android:layout_height="60.0px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30.0px"
+                        android:layout_marginRight="30.0px"
+                        android:src="@mipmap/youxi" />
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/hot_game_img"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="在线游戏"
+                            android:textColor="#ff666666"
+                            android:textSize="28.0px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4.0px"
+                            android:text="免安装试玩"
+                            android:textColor="#ff999999"
+                            android:textSize="24.0px" />
+                    </com.zhy.autolayout.AutoLinearLayout>
+                </com.zhy.autolayout.AutoRelativeLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

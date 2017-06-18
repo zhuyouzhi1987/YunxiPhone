@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/appMainColor">
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/back"
+            android:layout_width="80px"
+            android:layout_height="80px">
+
+            <ImageView
+
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/back" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="账号登录"
+            android:textColor="#ffffff"
+            android:textSize="32px"
+
+            />
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/reg_btn"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_alignParentRight="true"
+
+            >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="注册"
+            android:textColor="@color/white"
+            android:textSize="28px" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/phone_layout"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_below="@+id/title"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:layout_marginTop="80px">
+
+                <TextView
+                    android:id="@+id/phone_front"
+                    android:layout_width="80px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="+86"
+                    android:textColor="#666666"
+                    android:textSize="34px" />
+
+                <EditText
+                    android:id="@+id/phone_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:layout_toRightOf="@+id/phone_front"
+                    android:background="@null"
+                    android:hint="请输入已注册的手机号"
+                    android:inputType="numberDecimal"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:textColor="#666666"
+                    android:textColorHint="#999999"
+                    android:textCursorDrawable="@drawable/cusor_color"
+                    android:textSize="28px"></EditText>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/phone_layout"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:background="@color/line" />
+
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/pwd_layout"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_below="@+id/line"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+
+                >
+
+                <TextView
+                    android:id="@+id/pwd_front"
+                    android:layout_width="80px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="密码"
+                    android:textColor="#666666"
+                    android:textSize="32px"
+
+                    />
+
+
+                <EditText
+                    android:id="@+id/pwd_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:layout_toRightOf="@+id/pwd_front"
+                    android:background="@null"
+                    android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:textColor="#666666"
+                    android:textColorHint="#999999"
+                    android:textCursorDrawable="@drawable/cusor_color"
+                    android:textSize="28px"
+
+                    />
+
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <TextView
+                android:id="@+id/forget_pwd_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/pwd_layout"
+                android:layout_marginRight="40px"
+                android:layout_marginTop="80px"
+                android:text="重置密码"
+                android:textColor="@color/blue_text"
+                android:textSize="28px"
+
+                />
+
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/login_btn"
+                android:layout_width="480px"
+                android:layout_height="72px"
+                android:layout_below="@+id/forget_pwd_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80px"
+                android:background="@drawable/green_yuanjiao_itemclick_selector"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="立即登录"
+                    android:textColor="@color/white"
+                    android:textSize="28px"
+
+                    />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <include layout="@layout/no_data" />
+
+        <include layout="@layout/loading" />
+
+        <include layout="@layout/no_wifi" />
+    </com.zhy.autolayout.AutoFrameLayout>
+</com.zhy.autolayout.AutoLinearLayout>

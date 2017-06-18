@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/appMainColor">
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/back"
+            android:layout_width="80px"
+            android:layout_height="80px">
+
+            <ImageView
+
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/back" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/qiehuan_layout"
+            android:layout_width="300px"
+            android:layout_height="56px"
+            android:layout_centerInParent="true"
+            android:background="@drawable/white_yuanjiao"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tiyan_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="2px"
+                android:layout_weight="1"
+                android:background="@drawable/green_yuanjiao"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="体验"
+                android:textColor="@color/white"
+                android:textSize="32px" />
+
+            <TextView
+                android:id="@+id/zhuijia_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="2px"
+                android:layout_weight="1"
+                android:background="@drawable/white_yuanjiao"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="追加"
+                android:textColor="@color/appMainColor"
+                android:textSize="32px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/tips"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_alignParentRight="true">
+
+
+            <ImageView
+                android:layout_width="42px"
+                android:layout_height="42px"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/tips_icon" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            >
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_above="@+id/ads_layout"
+            android:layout_below="@+id/title"
+            android:background="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_above="@+id/ads_layout"
+            android:background="@color/line" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/ads_layout"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_gravity="bottom"
+            android:background="@drawable/white_yuanjiao"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/ads_img"
+                android:layout_width="60.0px"
+                android:layout_height="60.0px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20.0px"
+                android:layout_marginRight="20.0px"
+                android:src="@mipmap/free" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ads_img"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="限时体验"
+                    android:textColor="@color/red"
+                    android:textSize="28.0px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4.0px"
+                    android:text="完成每个任务最少奖励50云朵"
+                    android:textColor="#999999"
+                    android:textSize="24.0px" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:id="@+id/go_baidu"
+                android:layout_width="144px"
+                android:layout_height="60px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20px"
+                android:background="@drawable/red_yuanjiao_itemclick_selector"
+                android:gravity="center"
+                android:text="立即前往"
+                android:textColor="@color/white"
+                android:textSize="28px" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+        <include layout="@layout/loading" />
+        <include layout="@layout/no_data" />
+    </com.zhy.autolayout.AutoFrameLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

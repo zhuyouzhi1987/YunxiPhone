@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lLayout_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_yuanjiao"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:textColor="#333333"
+        android:textSize="32px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line"
+        android:layout_marginTop="20px"
+        />
+
+    <TextView
+        android:id="@+id/txt_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="160px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="20px"
+        android:textColor="#666666"
+        android:textSize="28px" />
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="20px"
+        >
+
+
+
+        <TextView
+            android:id="@+id/btn_ok"
+            android:layout_width="360px"
+            android:layout_height="60px"
+            android:textSize="28px"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/green_yuanjiao_itemclick_selector"
+            android:layout_centerInParent="true"
+            />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>

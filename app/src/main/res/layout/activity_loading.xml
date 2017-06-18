@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/third_ads"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/own_ads" />
+
+    <TextView
+        android:id="@+id/time_size"
+        android:layout_width="120px"
+        android:layout_height="60px"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="80px"
+        android:background="@drawable/time_yuanjiao"
+        android:gravity="center"
+        android:text="跳过"
+        android:textColor="@color/white"
+        android:textSize="28px"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/time_number"
+        android:layout_width="120px"
+        android:layout_height="60px"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="80px"
+        android:background="@drawable/time_yuanjiao"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="28px" />
+
+    <ImageView
+        android:id="@+id/own_ads"
+        android:layout_width="match_parent"
+        android:layout_height="240px"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/kaiping" />
+</com.zhy.autolayout.AutoRelativeLayout>

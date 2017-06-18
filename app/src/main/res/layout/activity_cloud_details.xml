@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/appMainColor">
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/back"
+            android:layout_width="80px"
+            android:layout_height="80px">
+
+            <ImageView
+
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/back" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/title_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="云朵详情"
+            android:textColor="#ffffff"
+            android:textSize="32px"
+
+            />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/title_second"
+                android:layout_width="match_parent"
+                android:layout_height="60px"
+                android:layout_below="@+id/title"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="发生时间"
+                    android:textColor="#666666"
+                    android:textSize="28px"
+
+                    />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="14px"
+                    android:layout_marginTop="14px"
+                    android:background="@color/line" />
+
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="余额详情"
+                    android:textColor="#666666"
+                    android:textSize="28px" />
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:id="@+id/tag"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/title_second"
+                android:background="@color/line" />
+
+
+            <com.yunxi.phone.utils.MySwipeRefreshLayout
+                android:id="@+id/swipe_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tag"
+                android:orientation="vertical">
+
+                <com.yunxi.phone.utils.AutoLoadListView
+                    android:id="@+id/cloud_details_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:listSelector="@android:color/transparent" />
+
+
+            </com.yunxi.phone.utils.MySwipeRefreshLayout>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <include layout="@layout/no_data" />
+
+        <include layout="@layout/loading" />
+        <include layout="@layout/data_zero" />
+    </com.zhy.autolayout.AutoFrameLayout>
+</com.zhy.autolayout.AutoLinearLayout>

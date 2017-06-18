@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/footer_container"
+	android:layout_width="match_parent"
+	android:layout_height="120px"
+	>
+
+	<com.wang.avi.AVLoadingIndicatorView
+		android:id="@+id/prog"
+		android:layout_width="35dp"
+		android:layout_height="35dp"
+		app:indicatorName="BallBeatIndicator"
+		app:indicatorColor="@color/appMainColor"
+		android:layout_centerInParent="true"
+		/>
+
+</com.zhy.autolayout.AutoRelativeLayout>

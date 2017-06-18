@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/appMainColor">
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/back"
+            android:layout_width="80px"
+            android:layout_height="80px">
+
+            <ImageView
+
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/back" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="文章详情"
+            android:textColor="#ffffff"
+            android:textSize="32px"
+
+            />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/collect_layout"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_alignParentRight="true"
+            >
+
+        <ImageView
+            android:id="@+id/collect_icon"
+            android:layout_width="42px"
+            android:layout_height="42px"
+            android:layout_centerInParent="true"
+            />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+
+        <com.tencent.smtt.sdk.WebView
+            android:id="@+id/web"
+            android:layout_below="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            />
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

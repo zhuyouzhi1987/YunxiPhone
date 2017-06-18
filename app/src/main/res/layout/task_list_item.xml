@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/double_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160px"
+        >
+
+        <ImageView
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:id="@+id/icon"
+            android:layout_centerVertical="true"
+            />
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/icon"
+            android:layout_toLeftOf="@+id/task_btn"
+            android:layout_marginRight="20px"
+            >
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28px"
+                android:textColor="#666666"
+                />
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#999999"
+                android:layout_marginTop="10px"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textSize="24px"
+                />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+        <TextView
+            android:id="@+id/task_btn"
+            android:layout_width="144px"
+            android:layout_height="60px"
+            android:text=""
+            android:textSize="28px"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20px"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:background="@drawable/green_yuanjiao_itemclick_selector"
+            />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line"
+        android:layout_marginLeft="160px"
+        android:id="@+id/view" />
+</com.zhy.autolayout.AutoLinearLayout>

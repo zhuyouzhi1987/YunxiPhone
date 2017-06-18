@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/single_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/default_itemclick_selector"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220px">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="680px"
+            android:layout_height="180px"
+            android:scaleType="centerCrop"
+            android:layout_centerInParent="true" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line"
+            android:layout_alignParentBottom="true"
+            />
+
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

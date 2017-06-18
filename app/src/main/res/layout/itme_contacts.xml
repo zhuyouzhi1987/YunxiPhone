@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/catalog"
+        android:layout_width="fill_parent"
+        android:layout_height="50px"
+        android:layout_weight="1.0"
+        android:background="#f2f2f2"
+        android:gravity="center_vertical"
+        android:paddingLeft="20px"
+        android:text="A"
+        android:textColor="@color/bottomTabTxtUnSelectColor"
+        android:textSize="28px"
+        android:visibility="gone" />
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/friend_item_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="100px"
+        android:background="@drawable/default_itemclick_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20px">
+
+        <ImageView
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:src="@mipmap/phone" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="40px"
+            android:layout_weight="1.0"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="hhhh"
+                android:maxLines="10"
+                android:textColor="@color/bottomTabTxtUnSelectColor"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/textColor"
+                android:textSize="24px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+        <ImageView
+            android:id="@+id/more"
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:layout_marginRight="20px"
+            android:src="@mipmap/moredian" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

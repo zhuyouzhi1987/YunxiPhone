@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/appMainColor">
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/back"
+            android:layout_width="80px"
+            android:layout_height="80px">
+
+            <ImageView
+
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/back" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="奖励规则"
+            android:textColor="#ffffff"
+            android:textSize="32px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/user_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/white_yuanjiao_itemclick_selector">
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/title_one"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20px"
+                android:layout_marginTop="20.0px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30px"
+                    android:text="1.每日完成下列指定步数即可获得对应奖励 ！当日有效 ，次日重置 ！请及时领取 ！"
+                    android:textColor="@color/bottomTabTxtUnSelectColor"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6px"
+                    android:text="2.需要对朋友圈开放重力感应权限 ，并保持软件一直在后台运行才可准确记录您的步数 ！"
+                    android:textColor="@color/bottomTabTxtUnSelectColor"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6px"
+                    android:text="3.如有疑问可随时在软件内 - 咨询反馈功能联系客服"
+                    android:textColor="@color/bottomTabTxtUnSelectColor"
+                    android:textSize="28px" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40px"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12px"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="8px"
+                android:layout_height="8px"
+                android:src="@mipmap/rectangle_left" />
+
+            <TextView
+                android:layout_width="144px"
+                android:layout_height="40px"
+                android:background="@color/appMainColor"
+                android:gravity="center"
+                android:text="注意事项"
+                android:textColor="@color/white"
+                android:textSize="24px" />
+
+            <ImageView
+                android:layout_width="8px"
+                android:layout_height="8px"
+                android:src="@mipmap/rectangle_right" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoFrameLayout>
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/white_yuanjiao_itemclick_selector">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0px">
+
+                <ListView
+                    android:id="@+id/list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20px"
+                    android:divider="@null">
+
+                </ListView>
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40px"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12px"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="8px"
+                android:layout_height="8px"
+                android:src="@mipmap/rectangle_left" />
+
+            <TextView
+                android:layout_width="144px"
+                android:layout_height="40px"
+                android:background="@color/appMainColor"
+                android:gravity="center"
+                android:text="奖励阶梯"
+                android:textColor="@color/white"
+                android:textSize="24px" />
+
+            <ImageView
+                android:layout_width="8px"
+                android:layout_height="8px"
+                android:src="@mipmap/rectangle_right" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoFrameLayout>
+</com.zhy.autolayout.AutoLinearLayout>

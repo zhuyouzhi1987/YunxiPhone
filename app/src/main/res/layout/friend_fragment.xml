@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/appMainColor">
+
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/syn"
+            android:layout_width="80px"
+            android:layout_height="80px">
+
+            <ImageView
+
+                android:layout_width="44px"
+                android:layout_height="44px"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/tongbu" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="54px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_toLeftOf="@+id/add"
+            android:layout_toRightOf="@+id/syn"
+            android:background="@drawable/edittext_shape"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/fangdaj"
+                android:layout_width="32px"
+                android:layout_height="30px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:layout_toLeftOf="@+id/add"
+                android:src="@mipmap/magnifier" />
+
+            <com.yunxi.phone.utils.ClearEditText
+                android:id="@+id/filter_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="54px"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/syn"
+                android:background="@drawable/edittext_shape"
+                android:gravity="center_vertical"
+                android:hint="输入搜索内容..."
+                android:textCursorDrawable="@drawable/cusor_color"
+                android:singleLine="true"
+                android:textColorHint="#999999"
+                android:textColor="@color/bottomTabTxtUnSelectColor"
+                android:textSize="24px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/add"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_alignParentRight="true"
+            >
+
+            <ImageView
+
+                android:layout_width="44px"
+                android:layout_height="44px"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/add" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.yunxi.phone.utils.SwipeMenuListView
+            android:id="@+id/country_lvcountry"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:divider="@color/line"
+            android:dividerHeight="1px" />
+
+        <include layout="@layout/contast_notdata" />
+        <include layout="@layout/loading" />
+    </com.zhy.autolayout.AutoFrameLayout>
+</com.zhy.autolayout.AutoLinearLayout>
+

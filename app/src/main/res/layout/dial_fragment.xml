@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/appMainColor">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="朋友圈通话"
+            android:textColor="@color/white"
+            android:textSize="32px" />
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/dail_desc"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+
+                android:layout_width="42px"
+                android:layout_height="42px"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/tips_icon" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        >
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/dail_ads"
+                android:layout_width="match_parent"
+                android:layout_height="180px"
+                android:layout_below="@+id/title"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="20px"
+                android:background="@mipmap/call_background">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+
+                    >
+
+
+                    <TextView
+                        android:id="@+id/title_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/white"
+                        android:textSize="36px"
+                        android:textStyle="bold"
+
+                        />
+
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title_desc"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="24px"
+
+                        >
+
+
+                        <TextView
+                            android:id="@+id/get_more"
+                            android:layout_width="180px"
+                            android:layout_height="52px"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/keyong_time"
+                            android:background="@drawable/red_yuanjiao_itemclick_selector"
+                            android:gravity="center"
+                            android:text="获取更多"
+                            android:textColor="@color/white"
+                            android:textSize="24px"
+
+                            />
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/show_layout"
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:layout_below="@+id/dail_ads"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="+86"
+                        android:textColor="#666666"
+                        android:textSize="32px" />
+
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4">
+
+                    <EditText
+                        android:id="@+id/show_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@null"
+                        android:cursorVisible="false"
+                        android:enabled="false"
+                        android:maxLength="13"
+                        android:text=""
+                        android:textColor="@color/appMainColor"
+                        android:textSize="56px"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="仅支持拨打手机号码"
+                        android:textColor="#cccccc"
+                        android:textSize="28px"
+
+                        />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/delete_number_btn"
+                        android:layout_width="50px"
+                        android:layout_height="40px"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/dail_close" />
+
+
+                    <ImageView
+                        android:id="@+id/friend_btn"
+                        android:layout_width="43px"
+                        android:layout_height="42px"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/tab_friend_hl"
+                        android:visibility="gone" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:id="@+id/tips_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/show_layout"
+                android:text="通话前需启动录音权限（用于声音传输并非监听）"
+                android:textSize="20px"
+                android:layout_centerHorizontal="true"
+                android:textColor="#999999"
+                />
+
+
+            <View
+                android:id="@+id/tag"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/tips_txt"
+                android:background="@color/line"
+                android:layout_marginTop="5px"
+
+                />
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/key_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/dail_btn"
+                android:layout_below="@+id/tag"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/number1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_itemclick_selector"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="#666666"
+                        android:textSize="56px"
+
+                        />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/line" />
+
+                    <TextView
+                        android:id="@+id/number2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_itemclick_selector"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textColor="#666666"
+                        android:textSize="56px"
+
+                        />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/line"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/number3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_itemclick_selector"
+                        android:gravity="center"
+                        android:text="3"
+                        android:textColor="#666666"
+                        android:textSize="56px"
+
+                        />
+
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/line" />
+
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/number4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_itemclick_selector"
+                        android:gravity="center"
+                        android:text="4"
+                        android:textColor="#666666"
+                        android:textSize="56px"
+
+                        />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/line" />
+
+                    <TextView
+                        android:id="@+id/number5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_itemclick_selector"
+                        android:gravity="center"
+                        android:text="5"
+                        android:textColor="#666666"
+                        android:textSize="56px"
+
+                        />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/line"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/number6"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_itemclick_selector"
+                        android:gravity="center"
+                        android:text="6"
+                        android:textColor="#666666"
+                        android:textSize="56px"
+
+                        />
+
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/line" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/number7"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_itemclick_selector"
+                        android:gravity="center"
+                        android:text="7"
+                        android:textColor="#666666"
+                        android:textSize="56px"
+
+                        />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/line" />
+
+                    <TextView
+                        android:id="@+id/number8"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_itemclick_selector"
+                        android:gravity="center"
+                        android:text="8"
+                        android:textColor="#666666"
+                        android:textSize="56px"
+
+                        />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/line"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/number9"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_itemclick_selector"
+                        android:gravity="center"
+                        android:text="9"
+                        android:textColor="#666666"
+                        android:textSize="56px"
+
+                        />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/line" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/number_star"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_itemclick_selector"
+                        android:gravity="center"
+                        android:text="＊"
+                        android:textColor="#666666"
+                        android:textSize="60px"
+
+                        />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/line" />
+
+                    <TextView
+                        android:id="@+id/number0"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_itemclick_selector"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#666666"
+                        android:textSize="56px"
+
+                        />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/line"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/number_jing"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/default_itemclick_selector"
+                        android:gravity="center"
+                        android:text="#"
+                        android:textColor="#666666"
+                        android:textSize="60px"
+
+                        />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/dail_btn"
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/line"
+
+                    />
+
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/dail_send_btn"
+                    android:layout_width="180px"
+                    android:layout_height="80px"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/dail_send_click_selector">
+
+                    <ImageView
+                        android:layout_width="46px"
+                        android:layout_height="46px"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/dail_send" />
+
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <include layout="@layout/no_data" />
+
+        <include layout="@layout/loading" />
+    </com.zhy.autolayout.AutoFrameLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/egg_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="#80000000"
+            >
+
+            <com.yunxi.phone.utils.MarqueTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is a color egg , author：bond(祝有智) , created by 2017.3.12"
+                android:textColor="#ffffff"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:focusableInTouchMode="true"
+                android:focusable="true"
+
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+
+                android:textSize="30px"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+
+                />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.yunxi.phone.utils.PeriscopeLayout
+        android:id="@+id/periscope"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </com.yunxi.phone.utils.PeriscopeLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#FF4081</color>
+    <color name="appMainColor">#00CBAE</color>
+
+    <!--底部tab栏颜色-->
+    <color name="bottomTabColor">#ffffff</color>
+    <!--底部tab字体点亮颜色-->
+    <color name="bottomTabTxtSelectColor">#00CBAE</color>
+    <!--底部tab字体变暗颜色-->
+    <color name="bottomTabTxtUnSelectColor">#666666</color>
+    <!--文字主色调(浅色)-->
+    <color name="textColor">#999999</color>
+    <color name="white">#ffffff</color>
+
+    <color name="gray">#e0e0e0</color>
+
+    <color name="red">#ff6666</color>
+
+    <!--背景底色-->
+    <color name="bg_color">#f2f2f2</color>
+
+    <!--分割线颜色-->
+    <color name="line">#e0e0e0</color>
+
+    <color name="line2">#aeaeae</color>
+
+    <!--蓝色文字-->
+    <color name="blue_text">#3592FF</color>
+
+    <!--蓝色背景-->
+    <color name="blue_btn">#3592FF</color>
+    <!--灰色按钮背景-->
+    <color name="gry_btn">#c9c9c9</color>
+
+</resources>

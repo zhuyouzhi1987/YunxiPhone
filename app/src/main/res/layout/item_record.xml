@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/record_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/default_itemclick_selector"
+    android:gravity="center_vertical"
+>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100px"
+        android:layout_marginLeft="20px"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tv_addr"
+            >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="张三"
+                android:layout_centerInParent="true"
+                android:textColor="@color/bottomTabTxtUnSelectColor"
+                android:textSize="28px" />
+
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8px"
+            android:text="石家庄"
+            android:textColor="@color/textColor"
+            android:visibility="gone"
+            android:textSize="24px" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="100px"
+        android:layout_marginRight="20px"
+        android:layout_toLeftOf="@+id/more"
+        android:gravity="center_vertical|right"
+        android:text="11:42"
+        android:textColor="@color/textColor"
+        android:textSize="24px" />
+
+    <ImageView
+        android:id="@+id/more"
+        android:layout_width="30px"
+        android:layout_height="30px"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:layout_marginRight="20px"
+        android:src="@mipmap/moredian" />
+
+</com.zhy.autolayout.AutoLinearLayout>

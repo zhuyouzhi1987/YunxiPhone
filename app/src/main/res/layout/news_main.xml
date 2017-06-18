@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    >
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/appMainColor">
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/back"
+            android:layout_width="80px"
+            android:layout_height="80px">
+
+            <ImageView
+
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/back" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="朋友圈热点"
+            android:textColor="#ffffff"
+            android:textSize="32px"
+
+            />
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/shoucang"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_alignParentRight="true"
+            >
+
+            <ImageView
+
+                android:layout_width="42px"
+                android:layout_height="42px"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/shoucang_news" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.yunxi.phone.viewpagerindicator.TabPageIndicator
+        android:id="@+id/indicator"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/title"
+        android:background="@color/white"
+        android:visibility="gone"
+        />
+
+    <View
+        android:id="@+id/tag"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line"
+        android:layout_below="@+id/indicator"
+        />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tag"
+        />
+
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

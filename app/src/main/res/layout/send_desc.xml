@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/appMainColor">
+
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/back"
+            android:layout_width="80px"
+            android:layout_height="80px">
+
+            <ImageView
+
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/back" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="奖励规则"
+            android:textColor="#ffffff"
+            android:textSize="32px"
+
+            />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        >
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/white_yuanjiao">
+
+
+            <TextView
+                android:id="@+id/tag1"
+                android:layout_marginTop="60px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:textSize="28px"
+                android:text="1.每个任务每日可获得1次奖励 ;"
+
+                />
+
+            <TextView
+                android:id="@+id/tag2"
+                android:layout_marginTop="20px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_below="@+id/tag1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:textSize="28px"
+                android:lineSpacingMultiplier="1.2"
+                android:text="2.点击按钮时 , 系统将为您生成1张专属推广图片 , 用于认定您的完成状态 , 约耗时1.5s ;"
+
+                />
+
+
+            <TextView
+                android:id="@+id/tag3"
+                android:layout_marginTop="20px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_below="@+id/tag2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:textSize="28px"
+                android:lineSpacingMultiplier="1.2"
+                android:text="3.通过指引将内容发送到朋友圈后 , 任意1人对你的推广图片内的二维码长按或扫码识别即认定完成任务 , 奖励自动发放 !"
+
+                />
+
+            <TextView
+                android:id="@+id/tag4"
+                android:layout_marginTop="20px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_below="@+id/tag3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:textSize="28px"
+                android:lineSpacingMultiplier="1.2"
+                android:text="4.转发后1日内不可删除朋友圈记录 ; 系统发现后每次扣除100云朵 ;"
+
+                />
+
+            <TextView
+                android:id="@+id/tag5"
+                android:layout_marginTop="20px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_below="@+id/tag4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:textSize="28px"
+                android:lineSpacingMultiplier="1.2"
+                android:text="5.如有疑问可随时在软件内 - 咨询反馈功能联系客服 ."
+
+                />
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:layout_below="@+id/tag5"
+                />
+
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40px"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12px"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="8px"
+                android:layout_height="8px"
+                android:src="@mipmap/rectangle_left" />
+
+            <TextView
+                android:layout_width="144px"
+                android:layout_height="40px"
+                android:background="@color/appMainColor"
+                android:gravity="center"
+                android:text="注意事项"
+                android:textColor="@color/white"
+                android:textSize="24px" />
+
+            <ImageView
+                android:layout_width="8px"
+                android:layout_height="8px"
+                android:src="@mipmap/rectangle_right" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoFrameLayout>
+
+
+
+
+
+
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

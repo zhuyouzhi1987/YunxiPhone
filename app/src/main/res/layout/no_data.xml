@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/not_data"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:clickable="true"
+    android:visibility="gone"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:src="@mipmap/fail" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20px"
+            android:text="加载失败~"
+            android:textColor="@color/bottomTabTxtUnSelectColor"
+            android:textSize="28px" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/get_data"
+            android:layout_width="240px"
+            android:layout_height="60px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20px"
+
+            android:background="@drawable/green_frame">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="刷新重试"
+                android:textColor="@color/appMainColor"
+                android:textSize="24px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

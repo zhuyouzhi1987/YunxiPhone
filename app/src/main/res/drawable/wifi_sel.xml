@@ -1,0 +1,6 @@
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:maxLevel="50" android:drawable="@mipmap/wifi_good" />
+    <item android:maxLevel="70" android:drawable="@mipmap/wifi_normal" />
+    <item android:maxLevel="90" android:drawable="@mipmap/wifi_bad" />
+    <item android:maxLevel="100" android:drawable="@mipmap/wifi_none" />
+</level-list>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/news_small_layout"
+        android:layout_width="match_parent"
+        android:layout_height="175px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+
+        android:background="@drawable/default_itemclick_selector"
+
+        >
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/view" />
+
+
+
+        <ImageView
+            android:layout_width="180px"
+            android:layout_height="135px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:id="@+id/news_small_icon"
+            android:layout_centerVertical="true"
+            />
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20px"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/news_small_icon"
+            android:layout_centerVertical="true"
+            >
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                >
+                <TextView
+                    android:id="@+id/small_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30px"
+                    android:textColor="#666666"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+
+                    />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/big_news_bg"
+                    android:layout_marginTop="20px"
+                    >
+
+                    <TextView
+                        android:id="@+id/from"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24px"
+                        android:textColor="#999999"
+
+                        />
+
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24px"
+                        android:textColor="#999999"
+                        android:layout_marginLeft="20px"
+
+                        />
+
+
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

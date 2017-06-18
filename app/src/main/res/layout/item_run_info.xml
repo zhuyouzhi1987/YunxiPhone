@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#999999"
+            android:textSize="24px"
+            android:gravity="center"
+            />
+
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/line"
+            android:layout_marginTop="14px"
+            android:layout_marginBottom="14px"
+            />
+
+
+        <TextView
+            android:id="@+id/yundong_num"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#999999"
+            android:textSize="24px"
+            android:gravity="center"
+            />
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/line"
+            android:layout_marginTop="14px"
+            android:layout_marginBottom="14px"
+            />
+
+
+        <TextView
+            android:id="@+id/intergral"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#999999"
+            android:textSize="24px"
+            android:gravity="center"
+            />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line"
+        android:id="@+id/view" />
+</com.zhy.autolayout.AutoLinearLayout>

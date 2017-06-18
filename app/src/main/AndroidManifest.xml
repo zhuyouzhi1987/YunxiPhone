@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.yunxi.phone">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="com.yunxi.phone.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="android.permission.BIND_DEVICE_ADMIN" />
+
+    <!-- Required -->
+    <permission
+        android:name="com.yunxi.phone.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+
+    <!--拨打电话的权限-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <application
+        android:name=".application.YunxiApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup"
+        >
+        <meta-data
+            android:name="design_width"
+            android:value="720" />
+        <meta-data
+            android:name="design_height"
+            android:value="1280" />
+        <meta-data
+            android:name="QBSDKAppKey"
+            android:value="C9et/k80mKOdO4lsYppWXoTe" />
+        <meta-data
+            android:name="BaiduMobAd_APP_ID"
+            android:value="e9945bee" />
+
+        <activity
+            android:name=".activity.LoadingActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="CHANNEL"
+            android:value="yunxi" />
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:excludeFromRecents="true"
+            />
+        <activity
+            android:name=".activity.SettingActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            />
+        <activity
+            android:name=".activity.FixPwdActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            />
+        <activity
+            android:name=".activity.OnlineGameActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            />
+        <activity
+            android:name=".activity.AboutActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            />
+        <activity
+            android:name=".activity.DailActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            />
+        <activity
+            android:name=".activity.CloudDetailsActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            />
+        <activity
+            android:name=".activity.SportActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            />
+        <activity
+            android:name=".activity.IncomeRankingActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            />
+        <activity
+            android:name=".activity.DownloadTaskActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            />
+        <activity
+            android:name=".activity.WebActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:excludeFromRecents="true"
+            />
+        <activity
+            android:name=".activity.AddContactActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            />
+        <activity
+            android:name=".activity.RewardRulesActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            />
+
+        <activity
+            android:name=".activity.SendActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            />
+        <activity
+            android:name=".activity.SendDescActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            />
+
+
+        <activity
+            android:name=".activity.UpDateContactActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            />
+        <activity
+            android:name=".activity.InvateActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            />
+        <activity
+            android:name=".activity.InvateDetailActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            />
+        <activity
+            android:name=".activity.SystemMsgActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            ></activity>
+        <activity
+            android:name=".activity.MsspWallActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            ></activity>
+
+        <activity android:name=".activity.MyCollectionActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            />
+
+        <activity android:name=".activity.NewsSingleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators"
+            android:excludeFromRecents="true"
+            />
+
+        <activity android:name=".activity.NewsDetailsActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            />
+        <activity
+            android:name=".activity.ExchangeActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            ></activity>
+        <activity
+            android:name=".activity.CertificationActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            ></activity>
+        <activity
+            android:name=".activity.GuideAcitivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            ></activity>
+        <activity
+            android:name=".activity.ExchangeRecord"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            ></activity>
+        <activity
+            android:name=".activity.DownloadInfoActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            ></activity>
+        <activity
+            android:name=".activity.LockActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            ></activity>
+        <activity
+            android:name=".activity.LockSettingActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            ></activity>
+        <activity
+            android:name=".activity.MySingleWallActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            ></activity>
+
+        <activity android:name=".activity.ProtocolActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name=".activity.DailDescActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            />
+
+
+        <activity
+            android:name=".activity.FedbackActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            android:windowSoftInputMode="adjustPan|stateAlwaysVisible" />
+        <receiver android:name="com.yunxi.phone.receiver.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.yunxi.phone.receiver.LockScreenReceiver" android:process=":process1">
+
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".service.DownloadService" />
+        <service android:name=".service.LockScreenService" android:process=":process1"/>
+        <service
+            android:name=".service.StepService"
+            android:priority="1000">
+            <intent-filter>
+
+                <!-- 系统启动完成后会调用 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_TIME_TICK" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".service.Service2" android:process=":process2"/>
+        <receiver android:name=".receiver.Receiver2" android:process=":process2"/>
+
+        <!-- 友盟分享 -->
+        <!-- 设置友盟的相关数据 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5877059e1c5dd02475001270" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="channel_01" />
+
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.AppCompat" />
+        <!-- 微信平台 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 新浪微博 -->
+        <activity
+            android:name=".WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <service
+            android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false"></service>
+        <!-- QQ和QQ空间 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1105900912" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 以下为极光推送 -->
+
+
+        <!-- Rich push 核心功能 since 2.0.6 -->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:exported="false"></activity>
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.yunxi.phone" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false"></service>
+
+        <!-- Required SDK 核心功能 -->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:process=":mult">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+
+                <category android:name="com.yunxi.phone" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <!-- Required  显示通知栏 -->
+                <category android:name="com.yunxi.phone" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name=".receiver.jpushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.yunxi.phone" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="c3adb3f6cacd3bc82f5b0f6b" />
+        <!-- </>值来自开发者平台取得的AppKey -->
+        <!-- 激光结束 -->
+        <!-- 百度地图 -->
+        <activity
+            android:name="com.baidu.mobads.AppActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    </application>
+
+</manifest>

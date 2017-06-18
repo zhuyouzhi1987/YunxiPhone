@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/view_bg"
+        android:layout_width="480px"
+        android:layout_height="600px"
+        android:background="@drawable/white_yuanjiao_itemclick_selector"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="120px"
+            android:layout_height="6px"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/appMainColor"></View>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_marginTop="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="朋友圈"
+            android:textColor="@color/appMainColor"
+            android:textSize="44px" />
+
+        <ImageView
+            android:id="@+id/iv_qr"
+            android:layout_marginTop="20px"
+            android:layout_width="320px"
+            android:layout_height="320px"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_userid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20px"
+            android:text="邀请ID"
+            android:textColor="@color/appMainColor"
+            android:textSize="28px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20px"
+            android:text="注册时填写额外获得100云朵"
+            android:textColor="#999999"
+            android:textSize="24px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="480px"
+        android:layout_height="40px"
+        android:background="#00000000"></View>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/login_btn"
+        android:layout_width="480px"
+        android:layout_height="72px"
+        android:layout_below="@+id/forget_pwd_btn"
+        android:layout_centerHorizontal="true"
+
+        android:background="@drawable/green_yuanjiao_itemclick_selector">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="图片保存到手机"
+            android:textColor="@color/white"
+            android:textSize="28px"
+
+            />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

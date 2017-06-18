@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">朋友圈</string>
+
+    <string name="press_again_exit">再按一次退出朋友圈</string>
+    <string name="add_contact">新建好友</string>
+    <string name="contact_name">姓名</string>
+    <string name="jiangli_guize1">1.在体验列表中按照要求对任意1个软件完成安装并联网打开即可获得对应奖励 ;</string>
+    <string name="jiangli_guize2">2.体验任务奖励仅限首次安装获得 , 曾安装及反复卸载安装无效 ;</string>
+    <string name="jiangli_guize3">3.完成任意1个体验任务后的次日起 , 将自动开放追加任务 , 根据要求完成后 , 每日可获得1次奖励 .</string>
+    <string name="jiangli_guize4">4.追加任务的软件 , 仅支持在追加任务列表中打开 , 手机桌面打开无效 ;</string>
+    <string name="jiangli_guize5">5.如有疑问可随时在软件内 - 咨询反馈功能联系客服 .</string>
+    <string name="egg">*#0 07#*</string>
+
+
+
+
+    <string name="question">每邀请1名有效新用户注册 ，您与Ta均可获得100云朵的额外奖励 ; \n新用户定义： \n1.从未安装过朋友圈的新设备 , 曾安装卸载无效 . \n2.从未注册过朋友圈的手机号 . \n特别提示：\n仅支持注册时填写邀请ID获得奖励 , 不可后补 !  "</string>
+    <string name="question2">点击上方 - 立即邀请按钮 , 选择适合您的方式将朋友圈App分享给好友 , Ta注册时填写您的邀请ID , 即认定成功邀请 ! \n1.点击二维码后自动将二维码图片保存到手机 , 可发送到任意平台及面对面扫码邀请 ; \n2.点击复制链接后在自动将邀请文字及链接保存到手机剪辑版 , 可发送到任意平台 ;</string>
+
+</resources>

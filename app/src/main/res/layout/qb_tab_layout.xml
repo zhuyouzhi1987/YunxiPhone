@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/phone_layout"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_marginTop="80px">
+
+            <TextView
+                android:id="@+id/phone_front"
+                android:layout_width="80px"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="号码"
+                android:textColor="#666666"
+                android:textSize="34px" />
+
+            <EditText
+                android:id="@+id/phone_text"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:layout_toRightOf="@+id/phone_front"
+                android:background="@null"
+                android:hint="请输入充值QQ号码"
+                android:inputType="numberDecimal"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:textColor="#666666"
+                android:textColorHint="#999999"
+                android:textCursorDrawable="@drawable/cusor_color"
+                android:textSize="28px"></EditText>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/phone_layout"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:background="@color/line" />
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/pwd_layout"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_below="@+id/line"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+
+            >
+
+            <TextView
+                android:id="@+id/pwd_front"
+                android:layout_width="80px"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="验证"
+                android:textColor="#666666"
+                android:textSize="32px"
+
+                />
+
+            <EditText
+                android:id="@+id/pwd_text"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:layout_toRightOf="@+id/pwd_front"
+                android:background="@null"
+                android:digits="0123456789"
+                android:hint="再次输入充值号码 , 以便确认！"
+                android:inputType="numberDecimal"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:textColor="#666666"
+                android:textColorHint="#999999"
+                android:textCursorDrawable="@drawable/cusor_color"
+                android:textSize="28px"
+
+                />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/pwd_layout"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:background="@color/line" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/money_layout"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_below="@+id/line2"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+
+            >
+
+            <TextView
+                android:id="@+id/money_front"
+                android:layout_width="80px"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="金额"
+                android:textColor="#666666"
+                android:textSize="32px" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:layout_toRightOf="@+id/money_front"
+                android:orientation="horizontal">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/rl_one"
+                    android:layout_width="122px"
+                    android:layout_height="46px"
+                    android:background="@drawable/default_frame">
+
+                    <TextView
+                        android:id="@+id/tv_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:button="@null"
+                        android:textColor="@color/textColor"
+                        android:textSize="28px"
+
+                        />
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/rl_two"
+                    android:layout_width="122px"
+                    android:layout_height="46px"
+                    android:layout_marginLeft="30px"
+                    android:background="@drawable/default_frame">
+
+                    <TextView
+                        android:id="@+id/tv_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:button="@null"
+                        android:textColor="@color/textColor"
+                        android:textSize="28px"
+
+                        />
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/rl_three"
+                    android:layout_width="122px"
+                    android:layout_height="46px"
+                    android:layout_marginLeft="30px"
+                    android:background="@drawable/default_frame">
+
+                    <TextView
+                        android:id="@+id/tv_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:button="@null"
+                        android:textColor="@color/textColor"
+                        android:textSize="28px" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/login_btn"
+            android:layout_width="480px"
+            android:layout_height="72px"
+            android:layout_below="@+id/money_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80px"
+            android:background="@drawable/green_yuanjiao_itemclick_selector">
+
+            <TextView
+                android:id="@+id/tv_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="提交申请"
+                android:textColor="@color/white"
+                android:textSize="28px" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_btn"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="40px"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="兑换说明："
+                android:textColor="#666666"
+                android:textSize="28px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:text="1.工作日提交的兑换申请  ， 将在3个工作日内到账 ."
+                android:textColor="#999999"
+                android:textSize="24px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.因运营商政策造成的某金额无法充值，将在3个工作日内返还云朵"
+                android:textColor="#999999"
+                android:textSize="24px" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.兑换比例 : 100云朵=1个Q币"
+                android:textColor="#999999"
+                android:textSize="24px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <include layout="@layout/no_data" />
+    <include layout="@layout/loading" />
+</com.zhy.autolayout.AutoFrameLayout>
